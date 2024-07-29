@@ -1,0 +1,226 @@
+/* CSS tambahan untuk gambar */
+.logo-image {
+    height: 50px; /* Sesuaikan dengan tinggi logo */
+}
+
+.package-image.smaall {
+    height: 50px; /* Sesuaikan dengan tinggi logo */
+    width: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.package-image.small {
+    height: 50px; /* Ukuran kecil */
+    width: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.package-image.medium {
+    height: 100px; /* Ukuran sedang */
+    width: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.package-image.large {
+    height: 150px; /* Ukuran besar */
+    width: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Animasi Fade In */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Import Animation CSS */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom, #00d4ff, #0046ff);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    border-radius: 0px 0px 20px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    width: 150px;
+}
+
+.login-btn {
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.3s;
+}
+
+.login-btn:hover {
+    background: linear-gradient(to right, #0072ff, #00c6ff);
+}
+
+.card {
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    color: #007bff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgb(255, 255, 255);
+}
+
+.card-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.table-section table {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+    background-color: #ffffff;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-section table thead th {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.table-section table tbody tr {
+    background-color: #f8f9fa;
+    transition: background-color 0.3s;
+}
+
+.table-section table tbody tr:nth-child(even) {
+    background-color: #e9ecef;
+}
+
+.table-section table tbody tr:hover {
+    background-color: #d6d8db;
+}
+
+.table-section table tbody td {
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.search-container {
+    margin-bottom: 20px;
+}
+
+.table-section {
+    margin-top: 20px;
+}
+
+.cari-btn {
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    border: none;
+    border-radius: 15px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.3s;
+}
+
+.cari-btn:hover {
+    background: linear-gradient(to right, #0072ff, #00c6ff);
+}
+
+.btn-picked-up {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.btn-pending {
+    background-color: #ffc107;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.small-card {
+    max-width: 50px; /* Adjust the width as needed */
+    margin: auto; /* Center the card */
+}
+
+.small-card .card-img-top {
+    max-height: 50px; /* Adjust the height as needed */
+    object-fit: cover; /* Ensure the image covers the area */
+}
+
+/* Carousel base class */
+.carousel {
+    margin-bottom: 4rem;
+}
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+    height: 32rem;
+}

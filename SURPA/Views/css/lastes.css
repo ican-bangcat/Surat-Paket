@@ -1,0 +1,157 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: #333;
+    margin: 0;
+    padding-top: 80px; /* Adjust according to the nav height */
+}
+
+/* Navigation Styles */
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    border-radius: 0px 0px 20px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo-image {
+    height: 20px;
+}
+
+nav .login-btn {
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.3s;
+}
+
+nav .login-btn:hover {
+    background: #005bb5;
+}
+
+/* Main Container Styles */
+main.container {
+    margin-top: 2rem;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Image Styles */
+.package-image {
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+.row.mb-3.text-center {
+    display: flex;
+    justify-content: center;
+}
+
+/* Search Container Styles */
+.search-container .input-group {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.search-container .form-control {
+    border-radius: 20px 0 0 20px;
+}
+
+.search-container .cari-btn {
+    background-color: #0066cc;
+    border: none;
+    color: white;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+}
+
+.search-container .cari-btn:hover {
+    background-color: #005bb5;
+}
+
+/* Table Styles */
+.table-section {
+    margin-top: 2rem;
+    overflow-x: auto;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    border: 1px solid #ddd; /* Border for the table */
+}
+
+.table thead {
+    background-color: #0066cc;
+    color: white;
+}
+
+.table thead th {
+    padding: 12px;
+    text-align: left;
+    font-weight: bold;
+    border-bottom: 2px solid #005bb5; /* Border for table header */
+}
+
+.table tbody tr {
+    background-color: #fff;
+    transition: background-color 0.3s;
+}
+
+.table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.table tbody td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd; /* Border for table rows */
+}
+
+.table tbody td:first-child {
+    border-left: 2px solid #ddd; /* Left border for the first column */
+}
+
+.table tbody td:last-child {
+    border-right: 2px solid #ddd; /* Right border for the last column */
+}
+
+.status-header .btn-picked-up {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 20px;
+    cursor: default;
+}
+
+.status-header .btn-pending {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 20px;
+    cursor: default;
+}
+
+/* Alert Styles */
+.alert-primary {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}

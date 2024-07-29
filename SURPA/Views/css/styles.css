@@ -1,0 +1,236 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom, #00d4ff, #0046ff);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    border-radius: 0px 0px 20px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    width: 150px;
+}
+
+.login-btn {
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    border: none;
+    text-decoration: none;
+    border-radius: 20px;
+    color: #fff;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.3s;
+}
+
+.login-btn:hover {
+    background: linear-gradient(to right, #0072ff, #00c6ff);
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width: 100%;
+    opacity: 0;
+    animation: fadeIn 2.0s forwards;
+    
+}
+
+.content {
+    max-width: 90%;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: slideInUp 1s forwards 0.5s;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.search-btn {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    border: none;
+    border-radius: 30px;
+    color: #ffffff;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-decoration: none;
+}
+
+.search-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(255, 126, 95, 0.6);
+}
+
+.image {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: slideInUp 1s forwards 0.7s;
+}
+
+.image img {
+    width: 100%;
+    max-width: 500px;
+}
+/* status-styles.css */
+
+
+
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (min-width: 768px) {
+    .hero {
+        flex-direction: row;
+        align-items: center;
+        padding: 150px 50px 50px 50px;
+    }
+
+    .content {
+        max-width: 500px;
+        text-align: left;
+        transform: translateX(-50px);
+        animation: slideInLeft 1s forwards 0.5s;
+    }
+
+    .image {
+        transform: translateX(50px);
+        animation: slideInRight 1s forwards 0.5s;
+    }
+
+    @keyframes slideInLeft {
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes slideInRight {
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+}
+
+header {
+    background: linear-gradient(to right, #007bff, #00aaff);
+    padding: 10px;
+}
+
+.btn-secondary {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.card {
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    color: #007bff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card:nth-child(1) {
+    background-color: #ffffff; /* Green for Paket Masuk */
+}
+
+.card:nth-child(2) {
+    background-color: #007bff; /* Blue for Paket Sekarang */
+}
+
+.card:nth-child(3) {
+    background-color: #dc3545; /* Red for Paket Keluar */
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgb(255, 255, 255);
+}
+
+.card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.card:hover::after {
+    opacity: 1;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.logo {
+    height: 20px;
+    margin-right: 0px;
+}

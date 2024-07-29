@@ -1,0 +1,19 @@
+.btn-pending {
+    background-color: #FAB005 !important; /* Orange */
+    color: white !important;
+    border-radius: 17px !important;;
+    text-align: center !important;
+}
+
+.btn-picked-up {
+    background-color: #0d6efd !important; /* Light Sea Green */
+    color: white !important;
+    border-radius: 17px !important;;
+    text-align: center !important;
+}
+th.status-header {
+    text-align: center;
+}
+td.status-header {
+    text-align: center;
+}
